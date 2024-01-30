@@ -1,0 +1,116 @@
+
+    body {
+      background-color: #f2f2f2;
+      padding: 2rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title:hover {
+      color: #007bff;
+    }
+
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    .animated.fadeIn {
+      animation-name: fadeIn;
+    }
+
+    .animated.fadeInUp {
+      animation-name: fadeInUp;
+    }
+
+    .animated.fadeInDown {
+      animation-name: fadeInDown;
+    }
+
+    .animated.fadeInLeft {
+      animation-name: fadeInLeft;
+    }
+
+    .animated.fadeInRight {
+      animation-name: fadeInRight;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translate3d(0, 40px, 0);
+        opacity: 0;
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        transform: translate3d(0, -40px, 0);
+        opacity: 0;
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInLeft {
+      0% {
+        transform: translate3d(-40px, 0, 0);
+        opacity: 0;
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        transform: translate3d(40px, 0, 0);
+        opacity: 0;
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type
